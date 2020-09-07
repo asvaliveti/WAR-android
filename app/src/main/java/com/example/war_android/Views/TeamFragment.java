@@ -24,7 +24,7 @@ import com.example.war_android.models.Team;
 public class TeamFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
-    private DashboardFragment dashboardFragment;
+    private DashboardFragment dashboardFragment = new DashboardFragment();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -83,6 +83,12 @@ public class TeamFragment extends Fragment {
                 team.setAutoDescription(autoNotes.getText().toString());
                 team.setAdditionalDescription(additionalNotes.getText().toString());
                 dashboardFragment.teams.add(team);
+                teamNumber.setText("");
+                teamHeight.setText("");
+                teamWeight.setText("");
+                teamDriveTrain.setText("");
+                autoNotes.setText("");
+                additionalNotes.setText("");
             }
         });
 
