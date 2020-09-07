@@ -14,13 +14,14 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.war_android.R;
 import com.example.war_android.ViewModels.DashboardViewModel;
+import com.example.war_android.models.Team;
 
 import java.util.ArrayList;
 
 public class DashboardFragment extends Fragment {
 
-    public ArrayList<>
     private DashboardViewModel dashboardViewModel;
+    public ArrayList<Team> teams = new ArrayList<Team>();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

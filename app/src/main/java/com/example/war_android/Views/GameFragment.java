@@ -15,7 +15,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.war_android.R;
 import com.example.war_android.ViewModels.NotificationsViewModel;
 
-public class NotificationsFragment extends Fragment {
+public class GameFragment extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;
 
@@ -23,7 +23,7 @@ public class NotificationsFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         notificationsViewModel =
                 ViewModelProviders.of(this).get(NotificationsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
+        View root = inflater.inflate(R.layout.fragment_game, container, false);
         final TextView textView = root.findViewById(R.id.text_notifications);
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
