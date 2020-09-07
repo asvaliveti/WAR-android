@@ -64,12 +64,13 @@
             />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:orientation="vertical"
             android:id="@+id/teams_recycler"
+            android:background="#000000"
             />
 
         <TextView
@@ -83,11 +84,12 @@
             />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:orientation="vertical"
             android:id="@+id/games_recycler"
+            android:background="#000000"
             />
 
 

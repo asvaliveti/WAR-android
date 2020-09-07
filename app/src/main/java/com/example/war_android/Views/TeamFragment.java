@@ -83,6 +83,7 @@ public class TeamFragment extends Fragment {
                 team.setAutoDescription(autoNotes.getText().toString());
                 team.setAdditionalDescription(additionalNotes.getText().toString());
                 dashboardFragment.teams.add(team);
+                Log.v("Team Fragment", "dashboard teams: " + dashboardFragment.teams);
                 teamNumber.setText("");
                 teamHeight.setText("");
                 teamWeight.setText("");
