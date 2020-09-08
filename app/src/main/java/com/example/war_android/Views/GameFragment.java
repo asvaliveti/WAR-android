@@ -176,6 +176,7 @@ public class GameFragment extends Fragment {
         });
 
         final EditText teamNo = root.findViewById(R.id.team_number_game);
+        final EditText gameNo = root.findViewById(R.id.number_game);
 
         aLower.setText(autoLower + "");
         aOuter.setText(autoOuter + "");
@@ -197,6 +198,7 @@ public class GameFragment extends Fragment {
                 game.setAutoLower(autoLower + "");
                 game.setAutoOuter(autoOuter + "");
                 game.setAutoInner(autoInner + "");
+                game.setGameNumber(gameNo.getText().toString());
                 game.setColorWheel(colorDropdown.getSelectedItem().toString());
                 game.setEndgame(climbDropdown.getSelectedItem().toString());
                 dashboardFragment.games.add(game);
