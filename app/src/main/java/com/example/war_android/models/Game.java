@@ -11,6 +11,7 @@ public class Game {
     private String inner;
     private String endgame;
     private String colorWheel;
+    private String gameNumber;
 
     public String getType() {
         return type;
@@ -18,6 +19,14 @@ public class Game {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getGameNumber() {
+        return gameNumber;
+    }
+
+    public void setGameNumber(String gameNumber) {
+        this.gameNumber = gameNumber;
     }
 
     public String getTeamNumber() {
